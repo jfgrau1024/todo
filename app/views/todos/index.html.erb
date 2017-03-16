@@ -1,24 +1,31 @@
-<h1>Todos las tareas</h1>
+<h1>Tareas Pendientes SPV</h1>
 
-<p>
-    <%= link_to "Nueva Tarea", new_todo_path %>
-</p>
+
 
 <table>
 <tr>
-    <th>name</th>
-    <th>descripcion</th>
+    <th>Referencia</th>
+    <th>Descripción</th>
+    <th class="b">Ver / Editar</th>
+    
+    <th class="b">Eliminar</th>
 </tr>
     <% @todos.each do |todo| %>
     <tr>
-        <td><%= todo.name %></td>
-        <td><%= todo.description %></td>
-        <td><%= link_to "Editar", edit_todo_path(todo) %></td>
-        <td><%= link_to "Mostrar", todo_path(todo) %></td>
-        <td><%= link_to "Eliminar", todo_path(todo), method: :delete, data:{confirm: "Estas seguro?"}%></td>
+        <td class="tarea"><%= todo.name.first(9) %></td>
+        <td class="descrip"><%= todo.description.first(55) %></td>
+        <td class="b"><%= link_to "X", edit_todo_path(todo) %></td>
+        
+        <td class="b"><%= link_to "X", todo_path(todo), method: :delete, data:{confirm: "Estas seguro?"}%></td>
          </td>
     </tr>
     
     <% end %>
     
 </table>
+
+<p class="lin">
+    <%= link_to "Nueva Tarea", new_todo_path %>
+</p>
+
+

@@ -3,6 +3,7 @@ class TodosController < ApplicationController
     
     def new
         @todo = Todo.new
+        
     end
     
     def create
@@ -17,7 +18,7 @@ class TodosController < ApplicationController
     
     
     def show
-        
+        redirect_to todos_path
     end
     
     def edit

@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+body {
+    
+    background-color:darkgrey;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.b{
+    
+    width: 70px;
+    text-align: center;
+    
+}
+
+.tarea{
+    
+    width: 100px;
+    text-align: center;
+    
+}
+
+
+.descrip{
+    
+    width: 430px;
+    text-align: center;
+    
+}
+
+#cont{
+    
+    width: 800px;
+    margin:  50px auto;
+    background-color:white;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-box-shadow: 5px 5px 5px 5px ##298CAD;
+    box-shadow: 5px 5px 5px 5px ##298CAD;
+    
+}
+
+h1{
+    text-align: center;
+    color:crimson;
+}
+
+a{
+    
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+    
+    
+}
+
+
+table {    
+        margin: 45px;          border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    padding: 8px; 
+    background: #e8edff;  
+    border-bottom: 1px solid #fff;
+   
+    color: #669; 
+    border-top: 1px solid transparent;  }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+
+#lin{
+    
+    text-align: right;
+    margin-right: 50;
+    
+    
+}
+
+textarea{
+    
+    width: 785px;
+    font-size: 130%;
+    height: 350px;
+    
+}
+
+input{
+    font-size: 130%;
+}

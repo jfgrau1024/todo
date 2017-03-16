@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Montserrat" rel="stylesheet">
